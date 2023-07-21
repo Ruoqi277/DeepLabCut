@@ -1,2 +1,2 @@
 # DeepLabCut
-Record the learning 
+学习DeepLabCut
