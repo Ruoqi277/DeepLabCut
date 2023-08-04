@@ -63,3 +63,7 @@ stdout:
 stderr:
 return code: 1
 
+
+### 8.4
+![image](https://github.com/Ruoqi277/DeepLabCut/assets/132852026/6c95659e-8208-4f00-8ccf-1e33bcce9f25)
+
