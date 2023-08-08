@@ -1,0 +1,65 @@
+    # Project definitions (do not edit)
+Task: f1test
+scorer: cai
+date: Aug7
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: C:\Users\Lenovo\Desktop\f1test-cai-2023-08-07
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  C:\Users\Lenovo\Desktop\Ruoqi cai\f1\Basler_acA640-750um__24510410__20230807_105445454.mp4:
+    crop: 0, 640, 0, 480
+bodyparts:
+- head
+- leftleg1
+- leftleg2
+- leftleg3
+- rightleg1
+- rightleg2
+- rightleg3
+- tail
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 50
+
+    # Plotting configuration
+skeleton:
+- - 
+  - 
+- - 
+  - 
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 3
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: imgaug
+snapshotindex: -1
+batch_size: 4
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
