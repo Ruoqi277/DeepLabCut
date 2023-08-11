@@ -61,3 +61,5 @@ Now, what I need to do is to generate the leg tracking picture with python.
 ## Read the protocol and find how to retrain the network
 If we are not satisfied with the accuration of the labeled video, we can add more label frame and train the network named iteration1/2/3, and get a new result.
 After that, check the video and be sure that whether to do again.
+
+CALCULATE THE DISTANCE AND SPEED FOR EACH LEG.
