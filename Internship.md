@@ -26,3 +26,7 @@ Get the labeled video from colab and get the .csv file , use .csv to create a tr
 ## Adjust the dotsize of the frame
 ## Retraining the network to make the result more accurate
 Yesterday’s result is not satisfied with us ( the problem is the dot is too small so that the result is not accurate.)
+
+### 2023-08-11
+## Run the Normal fly project
+## Read the protocol and find how to retrain the network
