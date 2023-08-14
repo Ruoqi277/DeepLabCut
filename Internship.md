@@ -69,7 +69,7 @@ go to wing
 record the lava
 
 ### 2023-08-14
-## label 100 frames and train 200 000 iteration 
+## label 100 frames and train 200 000 iteration
 
 change the body part from 7 parts to 6 parts (only legs)
 change the dotsize to 18
@@ -88,6 +88,128 @@ if the leg is not extend, label the first skeletion, if the leg moved, label the
 
 which kind of the gamma?? normal one or the grey one?
 just save
+
+## use the csv fle to calculate the distance and speed of each leg for the file
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/db436b09-d7b8-4931-a309-c18fe123638f)
+'''
+## 计算每只腿的运动速度
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 读取CSV文件
+data = pd.read_csv('N4DLC_resnet50_NAug10shuffle1_129000.csv')
+
+# 提取坐标数据
+leftleg1_x = data['leftleg1_x']
+leftleg1_y = data['leftleg1_y']
+leftleg2_x = data['leftleg2_x']
+leftleg2_y = data['leftleg2_y']
+leftleg3_x = data['leftleg3_x']
+leftleg3_y = data['leftleg3_y']
+
+rightleg1_x = data['rightleg1_x']
+rightleg1_y = data['rightleg1_y']
+rightleg2_x = data['rightleg2_x']
+rightleg2_y = data['rightleg2_y']
+rightleg3_x = data['rightleg3_x']
+rightleg3_y = data['rightleg3_y']
+
+# 计算总路程
+total_distanceL1 = 0
+total_distanceL2 = 0
+total_distanceL3 = 0
+total_distanceR1 = 0
+total_distanceR2 = 0
+total_distanceR3 = 0
+
+for i in range(1, len(leftleg1_x)):
+    dxL1 = leftleg1_x[i] - leftleg1_x[i - 1]
+    dyL1 = leftleg1_y[i] - leftleg1_y[i - 1]
+    total_distanceL1 += (dxL1**2 + dyL1**2)**0.5
+
+for i in range(1, len(leftleg2_x)):
+    dxL2 = leftleg2_x[i] - leftleg2_x[i - 1]
+    dyL2 = leftleg2_y[i] - leftleg2_y[i - 1]
+    total_distanceL2 += (dxL2**2 + dyL2**2)**0.5
+    
+for i in range(1, len(leftleg2_x)):
+    dxL3 = leftleg3_x[i] - leftleg3_x[i - 1]
+    dyL3 = leftleg3_y[i] - leftleg3_y[i - 1]
+    total_distanceL3 += (dxL3**2 + dyL3**2)**0.5
+    
+
+for i in range(1, len(rightleg1_x)):
+    dxR1 = rightleg1_x[i] - rightleg1_x[i - 1]
+    dyR1 = rightleg1_y[i] - rightleg1_y[i - 1]
+    total_distanceR1 += (dxR1**2 + dyR1**2)**0.5
+    
+for i in range(1, len(rightleg2_x)):
+    dxR2 = rightleg2_x[i] - rightleg2_x[i - 1]
+    dyR2 = rightleg2_y[i] - rightleg2_y[i - 1]
+    total_distanceR2 += (dxR2**2 + dyR2**2)**0.5
+    
+for i in range(1, len(rightleg3_x)):
+    dxR3 = rightleg3_x[i] - rightleg3_x[i - 1]
+    dyR3 = rightleg3_y[i] - rightleg3_y[i - 1]
+    total_distanceR3 += (dxR3**2 + dyR3**2)**0.5
+
+
+
+
+# 计算总时间
+total_time = 3000
+
+# 计算速度
+average_speed_L1 = total_distanceL1 / total_time
+average_speed_L2 = total_distanceL2 / total_time
+average_speed_L3 = total_distanceL3 / total_time
+
+average_speed_R1 = total_distanceR1 / total_time
+average_speed_R2 = total_distanceR2 / total_time
+average_speed_R3 = total_distanceR3 / total_time
+
+
+# print(f"Total DistanceL1: {total_distanceL1}px")
+# print(f"Average Speed leftleg1: {average_speed_L1}px/s")
+# print(f"Total DistanceL2: {total_distanceL2}px")
+# print(f"Average Speed leftleg2: {average_speed_L2}px/s")
+# print(f"Total DistanceL3: {total_distanceL3}px")
+# print(f"Average Speed leftleg3: {average_speed_L3}px/s")
+# print(f"Total DistanceL1: {total_distanceL1}px")
+
+# print(f"Total DistanceR1: {total_distanceR1}px")
+# print(f"Average Speed rightleg1: {average_speed_R1}px/s")
+# print(f"Total DistanceR2: {total_distanceR2}px")
+# print(f"Average Speed rightleg2: {average_speed_R2}px/s")
+# print(f"Total DistanceR3: {total_distanceR3}px")
+# print(f"Average Speed rightleg3: {average_speed_R3}px/s")
+
+
+
+# 创建一个空的DataFrame
+columns = ['Leg', 'Total Distance (px)', 'Average Speed (px/s)']
+df = pd.DataFrame(columns=columns)
+
+# 你之前计算得到的数据，假设这些数据已经存在
+leg_data = [
+    ('Left Leg 1', total_distanceL1, average_speed_L1),
+    ('Left Leg 2', total_distanceL2, average_speed_L2),
+    ('Left Leg 3', total_distanceL3, average_speed_L3),
+    ('Right Leg 1', total_distanceR1, average_speed_R1),
+    ('Right Leg 2', total_distanceR2, average_speed_R2),
+    ('Right Leg 3', total_distanceR3, average_speed_R3)
+]
+
+# 将数据逐行添加到DataFrame
+for leg, total_distance, average_speed in leg_data:
+    df.loc[len(df)] = [leg, total_distance, average_speed]
+# 打印自动生成的表格
+
+print(df)
+
+```
+
 
 
 
