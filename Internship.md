@@ -91,7 +91,8 @@ just save
 
 ## use the csv fle to calculate the distance and speed of each leg for the file
 ![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/db436b09-d7b8-4931-a309-c18fe123638f)
-'''
+
+'''python
 ## 计算每只腿的运动速度
 
 import pandas as pd
@@ -207,8 +208,9 @@ for leg, total_distance, average_speed in leg_data:
 # 打印自动生成的表格
 
 print(df)
-
 ```
+
+
 
 
 
