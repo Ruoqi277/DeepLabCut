@@ -63,3 +63,37 @@ If we are not satisfied with the accuration of the labeled video, we can add mor
 After that, check the video and be sure that whether to do again.
 
 CALCULATE THE DISTANCE AND SPEED FOR EACH LEG.
+
+finish normal
+go to wing
+record the lava
+
+### 2023-08-14
+## label 100 frames and train 200 000 iteration 
+
+change the body part from 7 parts to 6 parts (only legs)
+change the dotsize to 18
+change the batchsize to 4
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/619fd5a4-56ed-47ca-bafe-d4be803c399e)
+
+label
+
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/7697efb2-99ad-4edc-bc1e-d9c4f5879c99)
+
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/efdb34eb-29f3-4fe2-a7a2-f3543dcc455b)
+
+after disscusion about the label part it should be like this:
+if the leg is not extend, label the first skeletion, if the leg moved, label the part between the second one and the third one
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/f4043ed7-9017-41b2-ba3c-b714ee0a0937)
+
+which kind of the gamma?? normal one or the grey one?
+just save
+
+
+
+
+
+
+
+
+
