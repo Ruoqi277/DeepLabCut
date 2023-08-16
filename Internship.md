@@ -207,9 +207,24 @@ for leg, total_distance, average_speed in leg_data:
     df.loc[len(df)] = [leg, total_distance, average_speed]
 # 打印自动生成的表格
 
-print(df)
-```
+print(df)```
 
+###  2023-08-16
+## train the network to 70000 ( took almost 10 compute units)
+during the training time, I met the 'busy' situation as most of people, I chose to wait until it showed the issue like this:
+https://github.com/googlecolab/colabtools/issues/3441
+## analyze the video and get the .csv file (2 compute units) 
+Then I chose to contiue the next step, analyze the video, it looks like good, so I add the other videos (3 normal and 4 disease)
+Use each video generate the picture of six legs (200 rows)
+<img width="1470" alt="截屏2023-08-16 22 47 54" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/0f7f73f5-8f99-4b29-824e-22eddea872ad">
+
+### 2023-08-17
+## use the .csv file to calcute the distance and the speed for both kind of file
+1. adjust the file ( delete the scorer and likelihood, delete the two rows)
+   <img width="1389" alt="截屏2023-08-16 18 16 27" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/62ef868b-ef97-44d4-8869-ae274533837e">
+
+3. merge the file
+comparison
 
 
 
