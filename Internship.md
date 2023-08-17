@@ -250,6 +250,13 @@ check the video, it's accurate.
 
 ## Then analyze the other videos (72.64 compute unites)
 
+## Generate the picture of each wing
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/3859b60c-8807-4806-97a7-38d105525b72)
+
+## Calculate the Distance and speed
+
+
+
 
 
 
