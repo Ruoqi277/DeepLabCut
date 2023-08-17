@@ -215,6 +215,12 @@ during the training time, I met the 'busy' situation as most of people, I chose 
 https://github.com/googlecolab/colabtools/issues/3441
 ## analyze the video and get the .csv file (2 compute units) 
 Then I chose to contiue the next step, analyze the video, it looks like good, so I add the other videos (3 normal and 4 disease)
+<img width="1415" alt="截屏2023-08-17 11 00 20" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/61bd9187-1d4c-4b71-876e-4d6172c504b8">
+<img width="1406" alt="截屏2023-08-17 11 01 35" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/7224ba04-f8e7-425f-8187-e1799bb86184">
+
+
+
+
 Use each video generate the picture of six legs (200 rows)
 <img width="1470" alt="截屏2023-08-16 22 47 54" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/0f7f73f5-8f99-4b29-824e-22eddea872ad">
 
