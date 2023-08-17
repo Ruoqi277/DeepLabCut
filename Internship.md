@@ -218,19 +218,40 @@ Then I chose to contiue the next step, analyze the video, it looks like good, so
 <img width="1415" alt="截屏2023-08-17 11 00 20" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/61bd9187-1d4c-4b71-876e-4d6172c504b8">
 <img width="1406" alt="截屏2023-08-17 11 01 35" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/7224ba04-f8e7-425f-8187-e1799bb86184">
 
-
-
-
 Use each video generate the picture of six legs (200 rows)
 <img width="1470" alt="截屏2023-08-16 22 47 54" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/0f7f73f5-8f99-4b29-824e-22eddea872ad">
 
-### 2023-08-17
 ## use the .csv file to calcute the distance and the speed for both kind of file
 1. adjust the file ( delete the scorer and likelihood, delete the two rows)
    <img width="1389" alt="截屏2023-08-16 18 16 27" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/62ef868b-ef97-44d4-8869-ae274533837e">
+2. merge the file for comparison
 
-3. merge the file
-comparison
+
+### 2023-08-17
+## calculate the distance and speed for each video
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/b0ff954d-eadc-4439-a132-220d81449a2f)
+
+Then merge leftleg and rightleg to 'leg'
+<img width="1235" alt="截屏2023-08-17 16 02 14" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/64b884c7-ec37-4ccf-86e6-e8bf84833091">
+
+## Generate the plot (learn SEM standard error mean)
+
+![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/9c7a550a-49d7-4e87-ad2d-769b1251ec3d)
+
+
+## train wing network (84.13 compute unites)
+analyze video
+generate video (74.43 computer unites)
+check the video, it's accurate.
+<img width="640" alt="截屏2023-08-17 16 29 05" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/00ed9f7d-68b9-4a46-b758-49a8fc035c9c">
+<img width="503" alt="截屏2023-08-17 16 29 24" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/3f96085b-7ebc-47c3-a6e6-641e6c92c494">
+<img width="526" alt="截屏2023-08-17 16 29 46" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/f4279632-cc29-4d7a-8576-0db43cec220d">
+<img width="559" alt="截屏2023-08-17 16 30 18" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/dee5b70f-63e1-410a-b98f-fe930cf75991">
+
+## Then analyze the other videos (72.64 compute unites)
+
+
+
 
 
 
