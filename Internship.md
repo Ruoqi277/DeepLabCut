@@ -255,6 +255,14 @@ check the video, it's accurate.
 
 ## Calculate the Distance and speed
 
+### 2023-08-18
+## record the larva video (group 1 and group 2)
+label the frames
+
+## upload on my colab drive start training and analyze (71.96 compute unites)
+
+## continue to calculate the wing distance and speed
+
 
 
 
