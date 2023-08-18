@@ -260,6 +260,14 @@ check the video, it's accurate.
 label the frames
 
 ## upload on my colab drive start training and analyze (71.96 compute unites)
+train the network
+<img width="1447" alt="截屏2023-08-18 14 48 53" src="https://github.com/Ruoqi277/Internship-DLC/assets/132852026/58dc22f5-dbeb-4716-9bcf-26f688977f37">
+50.42 training
+## evaluate the network
+## anayze the video 50.01 compute unites
+check the tracking picture
+
+
 
 ## continue to calculate the wing distance and speed
 
