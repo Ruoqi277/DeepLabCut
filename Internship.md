@@ -1,12 +1,5 @@
 ### 2023-08-03
-## Run bonsai
-Try to follow the bonsai exercise 10 to create video which can do tracking
-![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/2db5b042-bfc4-4cc0-b63f-17affe6320cb)
-
-![image](https://github.com/Ruoqi277/Internship-DLC/assets/132852026/9550339a-c90c-4c5d-a174-8f933cd996aa)
-
-
-Run deeplabcut on windows10 from lab
+# Run deeplabcut on windows10 from lab
 
 ### 2023-08-04
 ## Run deeplabcut to label the frame
